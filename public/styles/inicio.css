@@ -1,0 +1,26 @@
+*{
+    background-color: slategrey;
+    /* border: solid: red 1px; */
+}
+
+h1{
+    text-align: center;
+    color: rgb(161, 13, 13);
+    background-color: azure;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagen{
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    border:  solid seagreen 7px;
+    margin: 10px;
+    cursor: pointer;
+}
