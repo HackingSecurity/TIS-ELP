@@ -12,29 +12,26 @@
 <body>
     <!-- Titulo del body-->
     <h1>¿Cuál es REAL?</h1>
-    <!-- 
+    <!--
         Parte que dedicamos alas imágenes y que posteriormente lo ajustamos con el identificativo "imagen"
         para modificarlo con el css
 
         src nos indica la url donde se cuenta las imagenes.
     -->
-    <div class="imagenes">
-        <img class="imagen" src="./images/prueba1.png">
-        <img class= "imagen" src="./images/prueba2.jpg">
+    <div class="contenedor">
+        <div class="imagenes">
+            <img class="imagen" src="./images/prueba1.png">
+            <img class="imagen" src="./images/prueba2.jpg">
+        </div>
+        <input class="boton" type="button" value="¿Necesitas AYUDA?" onclick="location.href='/public/ayuda.html';">
     </div>
-
-    <!-- 
-        Intento de Boton
-    -->
-    <p id="boton">¿Necesitas AYUDA?</p>
-
 
     <!--
         Hacemos alusión a la etiqueta footer que se encarga del pie de la página
         <a> Enlace a un link externo
-        
+
     -->
-    <footer class="footer">
+    <footer class="pie">
 
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
             <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />

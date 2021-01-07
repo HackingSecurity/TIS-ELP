@@ -1,0 +1,5 @@
+1)  Mantener el botón a la vista y redirigirlo a una nueva página.
+    1.1 Nombre del botón: ¿Quieres saber más?
+    1.2 
+
+2)  

@@ -21,26 +21,41 @@ h1{
     padding: 30px;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*
     Afecta a la clase "imagenes"
 */
 .imagenes{
+    height: 510px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    
 }
 
 /*
     Configuramos las clase "imagen" que esten dentro de "imagenes"
 */
 .imagenes .imagen{
-    width: 700px;
-    height: 700px;
+    height: 500px;
+    width: 500px;
     border-radius: 10px;
     border:  solid rgb(40, 39, 121) 7px;
-    margin: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.imagen:hover{
+    height: 510px;
+    width: 510px;
+    border-radius: 10px;
+    border: solid rgb(24, 143, 77) 7px;
     cursor: pointer;
 }
 
@@ -48,14 +63,13 @@ h1{
     Configuramos la etiqueta footer
 
 */
-footer {
+.pier {
     position: absolute;
     text-align: center;
     justify-content: center;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;   
-    color: aliceblue;
+    height: 2.5rem;
 }
 
 /*
@@ -63,7 +77,12 @@ footer {
     //recordamos que solo puede existir un id por documento html
     //por lo que es más util muchas veces usar clases.
 */
-#boton{
+
+/*
+    para id usamos #
+    para class  usamos .
+*/
+.boton {
     background-color: brown;
     color: cornsilk;
     font-style: normal;
@@ -71,6 +90,17 @@ footer {
     height: 50px;
     border: solid cornsilk 2px;
     border-radius: 10px;
-    margin-left: 46%;
+    margin-top: 2%;
+ 
+}
+.boton:hover{
+    background-color: rgb(173, 80, 80);
+    color: cornsilk;
+    font-style: normal;
+    border: solid cornsilk 2px;
+    border-radius: 10px;
     cursor: pointer;
+}
+.boton:active{
+    border: solid rgb(95, 95, 95);
 }
