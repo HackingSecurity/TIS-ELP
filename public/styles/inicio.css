@@ -52,11 +52,10 @@ h1{
 }
 
 .imagen:hover{
-    height: 510px;
-    width: 510px;
     border-radius: 10px;
-    border: solid rgb(24, 143, 77) 7px;
+    border: solid rgb(24, 143, 77) 12px;
     cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.164);
 }
 
 /*
@@ -103,4 +102,8 @@ h1{
 }
 .boton:active{
     border: solid rgb(95, 95, 95);
+}
+
+#aciertos{
+    color: aliceblue;
 }
