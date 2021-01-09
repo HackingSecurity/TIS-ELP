@@ -30,7 +30,7 @@ function nuevaRonda(){
     }
 
     else{
-        izquierda.src = "../images/fotos/f" + imgF + ".jpg>";
+        izquierda.src = "../images/fotos/f" + imgF + ".jpg";
         izquierda.style.width = "500px";
         izquierda.style.height = "500px";
 
@@ -39,7 +39,10 @@ function nuevaRonda(){
         derecha.style.height = "500px";
     }
 
-
+    if(rondas > 1){
+        document.getElementById('1').removeChild(document.getElementById('1').firstChild);
+        document.getElementById('2').removeChild(document.getElementById('2').firstChild);
+    }
     document.getElementById('1').appendChild(izquierda);
     document.getElementById('2').appendChild(derecha);
 }
