@@ -11,10 +11,17 @@ function iniciar(){
 
 function nuevaRonda(){
     rondas++;
+
+    if(rondas > 10){ //Cuando se completan las 10 rondas se redirige a la pagina de ayuda
+        window.location.href = "../views/ayuda.html";
+    }
+
+    //Se generan los numeros de las imagenes
     var imgR = Math.floor((Math.random() * 27) + 1);
     var imgF = Math.floor((Math.random() * 30) + 1);
 
-    verdadera = Math.floor((Math.random() * 2) + 1);
+    //Se decide aleatoriamente en que posición va a estar la imagen real:
+    verdadera = Math.floor((Math.random() * 2) + 1); 
     var izquierda = document.createElement("IMG");
     var derecha = document.createElement("IMG");     
      
@@ -38,7 +45,7 @@ function nuevaRonda(){
         derecha.style.width = "500px";
         derecha.style.height = "500px";
     }
-
+    
     if(rondas > 1){
         document.getElementById('1').removeChild(document.getElementById('1').firstChild);
         document.getElementById('2').removeChild(document.getElementById('2').firstChild);
