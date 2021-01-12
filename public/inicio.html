@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/styles/inicio.css">
+    <link rel="stylesheet" href="../styles/inicio.css" type="text/css">
+    <script type="text/javascript" src="../js/constantesIteracion.js"></script>
+    <script type="text/javascript" src="../js/iteracion.js"></script>
+   
     <!-- 
         Titulo en la pestaña del navegador
     -->
     <title>Inicio</title>
 </head>
-<body>
+<body onload="preIteracion()" >
     <!-- Titulo del body-->
+
+    
+
     <h1>¿Cuál es REAL?</h1>
     <!--
         Parte que dedicamos alas imágenes y que posteriormente lo ajustamos con el identificativo "imagen"
@@ -18,14 +24,28 @@
 
         src nos indica la url donde se cuenta las imagenes.
     -->
-    <div class="contenedor">
+    <div class="contenedor" >
         <div class="imagenes">
+            <div id="left" class="imagen left" data-imagen="left" ></div>
+            <div id="right" class="imagen right" data-imagen="right" ></div>
+            <button id="btn" class="btn-start" onclick="empezar()" data-button="btn">Empezar</button>
+
+            <!-- 
             <img class="imagen" src="./images/prueba1.png">
             <img class="imagen" src="./images/prueba2.jpg">
+            -->
         </div>
         <input class="boton" type="button" value="¿Necesitas AYUDA?" onclick="location.href='/public/ayuda.html';">
     </div>
 
+    <script>
+
+        function empezar(){
+            const btn = document.getElementById('btn')
+            empezarIteracion()
+        }
+    </script>
+    
     <!--
         Hacemos alusión a la etiqueta footer que se encarga del pie de la página
         <a> Enlace a un link externo

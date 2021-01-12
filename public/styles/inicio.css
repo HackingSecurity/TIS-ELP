@@ -11,6 +11,14 @@
 }
 
 /*
+    Solo afecta aquellas etiquetas img que entes dentro de la clase imagenes
+*/
+.imagenes img{
+    width: 500px;
+    height: 500px;
+}
+
+/*
     Afecta a los encabezados del h1
 */
 h1{
@@ -103,4 +111,21 @@ h1{
 }
 .boton:active{
     border: solid rgb(95, 95, 95);
+}
+
+
+.btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+  }
+
+
+.hide {
+    display: none;
 }
