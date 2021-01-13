@@ -60,8 +60,6 @@ h1{
 }
 
 .imagen:hover{
-    height: 510px;
-    width: 510px;
     border-radius: 10px;
     border: solid rgb(24, 143, 77) 7px;
     cursor: pointer;

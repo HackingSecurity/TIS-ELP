@@ -16,21 +16,45 @@ class Iteracion{
         this.generarFotos = this.generarFotos.bind(this)
         let correctas = null
         let incorrectas =  null
-        let aleatorioGenerado = 0
-        let orden = false;
         let verdadera = null
+        let imgR = null
+        let imgF = null
+
     }
 
     generarFotos(){
 
-        console.log(this.correctas)
 
         if(this.correctas == null){
             this.correctas = 0
             this.incorrectas = 0
         }
+        const img = ".jpg"
 
-        this.aleatorioGenerado = Math.floor((Math.random() * 27) + 1)
+        left.setAttribute('data-verdadera', '1')
+        right.setAttribute('data-verdadera', '2')
+
+        this.imgR = Math.floor((Math.random() * 27) + 1)
+        this.imgF = Math.floor((Math.random() * 30) + 1)
+
+        // console.log(this.imgR)
+        // console.log(this.imgF)
+
+        //Se decide aleatoriamente en que posición va a estar la imagen real:
+        this.verdadera = Math.floor((Math.random() * 2) + 1)
+
+        if(this.verdadera == 1){
+            left.src = srcFotoReales + this.imgR + img
+            right.src = srcFotoIA + this.imgF + img
+        }
+        else{
+            left.src = srcFotoIA + this.imgF + img
+            right.src = srcFotoReales + this.imgR + img
+        }
+
+       /* this.aleatorioGenerado = Math.floor((Math.random() * 27) + 1)
+        this.verdadera = Math.floor(Math.random() * 2 + 1)
+
         const img = ".jpg"
         left.setAttribute('data-lado', 'left')
         right.setAttribute('data-lado', 'right')
@@ -46,26 +70,26 @@ class Iteracion{
             right.src = srcFotoIA + this.aleatorioGenerado + img
             this.orden = true
         }
+        */
     }
 
     comprobarEleccion(ev){
-        //comprobamos el estatus de la data-lado 
-        var data_lado = String(ev.target.dataset.lado)
+        //comprobamos el estatus de la data-lado
+        var data_lado = (ev.target.dataset.verdadera)
         var comprobacion = String(this.verdadera)
 
         console.log(this.verdadera)
         console.log(data_lado)
+        
         //console.log(this.aleatorioGenerado)
         // console.log(this.correctas)
         // var nuevo = String(this.correctas)
-        
 
         if(comprobacion == data_lado){
             this.correctas++
-            console.log("Acertado " + this.correctas)
-            if((comprobacion == data_lado) && (data_lado == "left")){
+            if((comprobacion == data_lado) && (comprobacion == "1")){
                 left.src = srcFotoCorrecta
-            }else if((comprobacion == data_lado) && (data_lado == "right")){
+            }else if((comprobacion == data_lado) && (comprobacion == "2")){
                 right.src = srcFotoCorrecta
             }
 
@@ -74,9 +98,11 @@ class Iteracion{
             // this.generarFotos()
 
         }else{
-            if((comprobacion != data_lado) && (data_lado == "left")){
+
+            
+            if((comprobacion != data_lado) && (data_lado == "1")){
                 left.src = srcFotoIncorrecta
-            }else if((comprobacion != data_lado) && (data_lado == "right")){
+            }else if((comprobacion != data_lado) && (data_lado == "2")){
                 right.src = srcFotoIncorrecta
             }
 
@@ -84,15 +110,15 @@ class Iteracion{
             setTimeout(this.generarFotos, 300)
         }
 
+        console.log("Incorrecta " + this.incorrectas)
+
         if(this.incorrectas > 2){
+            confirm("Has fallado 3");
             window.location.href = "../ayuda.html";
         }else if(this.incorrectas + this.correctas > 9){
             window.location.href = "../ayuda.html";
         }
-    }
 
-    incrementar(){
-        console.log(this.correctas)
     }
 
     agregarEventosClick(){
