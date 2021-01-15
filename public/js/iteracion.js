@@ -23,8 +23,6 @@ class Iteracion{
     }
 
     generarFotos(){
-
-
         if(this.correctas == null){
             this.correctas = 0
             this.incorrectas = 0
@@ -37,8 +35,6 @@ class Iteracion{
         this.imgR = Math.floor((Math.random() * 27) + 1)
         this.imgF = Math.floor((Math.random() * 30) + 1)
 
-        // console.log(this.imgR)
-        // console.log(this.imgF)
 
         //Se decide aleatoriamente en que posición va a estar la imagen real:
         this.verdadera = Math.floor((Math.random() * 2) + 1)
@@ -52,25 +48,6 @@ class Iteracion{
             right.src = srcFotoReales + this.imgR + img
         }
 
-       /* this.aleatorioGenerado = Math.floor((Math.random() * 27) + 1)
-        this.verdadera = Math.floor(Math.random() * 2 + 1)
-
-        const img = ".jpg"
-        left.setAttribute('data-lado', 'left')
-        right.setAttribute('data-lado', 'right')
-
-        if(this.orden){
-            this.verdadera = "right"
-            left.src = srcFotoIA + this.aleatorioGenerado + img
-            right.src = srcFotoReales + this.aleatorioGenerado + img
-            this.orden = false
-        }else{
-            this.verdadera = "left"
-            left.src = srcFotoReales + this.aleatorioGenerado + img
-            right.src = srcFotoIA + this.aleatorioGenerado + img
-            this.orden = true
-        }
-        */
     }
 
     comprobarEleccion(ev){
@@ -80,7 +57,7 @@ class Iteracion{
 
         console.log(this.verdadera)
         console.log(data_lado)
-        
+
         //console.log(this.aleatorioGenerado)
         // console.log(this.correctas)
         // var nuevo = String(this.correctas)
@@ -99,7 +76,6 @@ class Iteracion{
 
         }else{
 
-            
             if((comprobacion != data_lado) && (data_lado == "1")){
                 left.src = srcFotoIncorrecta
             }else if((comprobacion != data_lado) && (data_lado == "2")){

@@ -1,0 +1,50 @@
+*{
+    background-color: rgb(32, 32, 32);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(241, 241, 237);
+}
+
+.navegador{
+    padding-top: 30px;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 4%;
+    font-size: medium;
+}
+
+a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: slateblue;
+}
+
+.pie{
+    position: fixed;
+    bottom: 0;
+    margin-left: -14.2%;
+    font-size: xx-small;
+    width: 100%;
+    padding-top: 10px;
+    border-top: dotted rgb(78, 78, 78) 1px;
+}
+
+#referencias{
+    border: solid rgb(59, 59, 59) 2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h3{
+    padding-top: 10px;
+}
+
+#creative{
+    width: 60px;
+    height: 20px;
+}
+
+
+

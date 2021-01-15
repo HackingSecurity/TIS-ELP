@@ -4,11 +4,12 @@
     Para todo el documento
     *
 */
-.contenedor{
+
+*{
     background-color: rgb(32, 32, 32);
     font-family: 'Roboto', sans-serif;
-    /* border: solid: red 1px; */
 }
+
 
 /*
     Solo afecta aquellas etiquetas img que entes dentro de la clase imagenes
@@ -44,7 +45,6 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 }
 
 /*
@@ -69,13 +69,14 @@ h1{
     Configuramos la etiqueta footer
 
 */
-.pier {
-    position: absolute;
-    text-align: center;
-    justify-content: center;
+.pie{
+    position: fixed;
     bottom: 0;
+    margin-left: -14.2%;
+    font-size: xx-small;
     width: 100%;
-    height: 2.5rem;
+    padding-top: 10px;
+    border-top: dotted rgb(78, 78, 78) 1px;
 }
 
 /*
@@ -97,7 +98,6 @@ h1{
     border: solid cornsilk 2px;
     border-radius: 10px;
     margin-top: 2%;
- 
 }
 .boton:hover{
     background-color: rgb(173, 80, 80);
