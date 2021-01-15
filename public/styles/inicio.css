@@ -4,7 +4,7 @@
     Para todo el documento
     *
 */
-*{
+.contenedor{
     background-color: rgb(32, 32, 32);
     font-family: 'Roboto', sans-serif;
     /* border: solid: red 1px; */
