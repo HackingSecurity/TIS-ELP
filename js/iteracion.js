@@ -90,7 +90,7 @@ class Iteracion{
 
         if(this.incorrectas > 2){
             confirm("Has fallado 3");
-            window.location.href = "../ayuda.html";
+            window.location.href = "ayuda.html";
         }else if(this.incorrectas + this.correctas > 9){
             window.location.href = "../ayuda.html";
         }
