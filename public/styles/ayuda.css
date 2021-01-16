@@ -21,15 +21,6 @@ a:visited {
     color: slateblue;
 }
 
-.pie{
-    position: fixed;
-    bottom: 0;
-    margin-left: -14.2%;
-    font-size: xx-small;
-    width: 100%;
-    padding-top: 10px;
-    border-top: dotted rgb(78, 78, 78) 1px;
-}
 
 #referencias{
     border: solid rgb(59, 59, 59) 2px;
@@ -44,6 +35,15 @@ h3{
 #creative{
     width: 60px;
     height: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin-left: -14.2%;
+    position: fixed;
+    z-index: 100;
 }
 
 

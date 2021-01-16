@@ -8,6 +8,7 @@
 *{
     background-color: rgb(32, 32, 32);
     font-family: 'Roboto', sans-serif;
+    
 }
 
 
@@ -35,6 +36,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
 /*
     Afecta a la clase "imagenes"
@@ -69,16 +71,6 @@ h1{
     Configuramos la etiqueta footer
 
 */
-.pie{
-    position: fixed;
-    bottom: 0;
-    margin-left: -14.2%;
-    font-size: xx-small;
-    width: 100%;
-    padding-top: 10px;
-    border-top: dotted rgb(78, 78, 78) 1px;
-}
-
 /*
     Configuramos el id "boton"
     //recordamos que solo puede existir un id por documento html
@@ -121,9 +113,28 @@ h1{
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 200px);
-  }
+}
 
 
 .hide {
     display: none;
+}
+
+.pie{
+    position: fixed;
+    bottom: 0;
+    font-size: xx-small;
+    width: 100%;
+    padding-top: 10px;
+    border-top: dotted rgb(78, 78, 78) 1px;
+    color: rgb(241, 241, 237);
+}
+
+a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: slateblue;
 }
