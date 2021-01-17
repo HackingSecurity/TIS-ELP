@@ -18,7 +18,7 @@ a{
 }
 
 a:visited {
-    color: slateblue;
+    color: rgb(137, 125, 214);
 }
 
 
@@ -30,11 +30,6 @@ a:visited {
 
 h3{
     padding-top: 10px;
-}
-
-#creative{
-    width: 60px;
-    height: 20px;
 }
 
 .menu{
