@@ -41,5 +41,26 @@ h3{
     z-index: 100;
 }
 
+li {
+    list-style-type: disc;
+}
+
+.imgWrapper{
+    font-size: 0;
+    text-align: center;
+}
+
+    .imgWrapper .pruebas {
+        display: inline-block;
+        font-size: inherit;
+        width: 25%;
+        max-width: 345px;
+    }
+
+.pruebas img {
+    height: auto;
+    width: 100%;
+}
+
 
 
