@@ -50,12 +50,12 @@ li {
     text-align: center;
 }
 
-    .imgWrapper .pruebas {
-        display: inline-block;
-        font-size: inherit;
-        width: 25%;
-        max-width: 345px;
-    }
+.imgWrapper .pruebas {
+    display: inline-block;
+    font-size: inherit;
+    width: 25%;
+    max-width: 345px;
+}
 
 .pruebas img {
     height: auto;

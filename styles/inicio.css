@@ -115,19 +115,8 @@ h1{
     left: calc(50% - 200px);
 }
 
-
 .hide {
     display: none;
-}
-
-.pie{
-    position: fixed;
-    bottom: 0;
-    font-size: xx-small;
-    width: 100%;
-    padding-top: 10px;
-    border-top: dotted rgb(78, 78, 78) 1px;
-    color: rgb(241, 241, 237);
 }
 
 a{
