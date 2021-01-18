@@ -5,10 +5,9 @@
     *
 */
 
-*{
-    background-color: rgb(32, 32, 32);
+* {
+    background-color: #1E243D;
     font-family: 'Roboto', sans-serif;
-
 }
 
 
@@ -23,9 +22,9 @@
 /*
     Afecta a los encabezados del h1
 */
-h1{
+h1 {
     text-align: center;
-    color: rgb(40, 39, 121);
+    color: #ECF3FF;
     background-color: rgba(163, 163, 163, 0.623);
     font-size: 50px;
     padding: 30px;
