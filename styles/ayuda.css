@@ -1,4 +1,4 @@
-* {
+﻿* {
     background-color: #1E243D;
     font-family: 'Roboto', sans-serif;
     color: rgb(241, 241, 237);
@@ -61,6 +61,13 @@ li {
 .pruebas img {
     height: auto;
     width: 100%;
+}
+@media screen and (min‐width: 700px) {
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 
