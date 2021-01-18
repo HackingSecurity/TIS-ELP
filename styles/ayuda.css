@@ -4,10 +4,6 @@
     color: rgb(241, 241, 237);
 }
 
-body {
-    min-width: fit-content;
-}
-
 .navegador{
     padding-top: 30px;
     margin-left: 11%;
