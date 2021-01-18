@@ -10,10 +10,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    min-width: fit-content;
-}
-
 /*
     Solo afecta aquellas etiquetas img que entes dentro de la clase imagenes
 */
